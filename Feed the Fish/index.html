@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Feed the Fish</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script> <!-- nur diese Zeile bleibt -->
+</head>
+
+<body>
+  <div id="fish-container">
+    <!-- Fische Zeile 1–7 -->
+    <div class="fish-row" id="row-1">
+      <div class="fish left">
+        <img src="Fisch1.png" alt="Fisch 1" class="fish-image">
+        <div class="fish-number">1</div>
+      </div>
+      <div class="fish right">
+        <img src="Fisch2.png" alt="Fisch 2" class="fish-image">
+        <div class="fish-number">2</div>
+      </div>
+    </div>
+    <div class="fish-row" id="row-2">
+      <div class="fish left"><img src="Fisch1.png" alt="Fisch 3" class="fish-image"><div class="fish-number">3</div></div>
+      <div class="fish right"><img src="Fisch2.png" alt="Fisch 4" class="fish-image"><div class="fish-number">4</div></div>
+    </div>
+    <div class="fish-row" id="row-3">
+      <div class="fish left"><img src="Fisch1.png" alt="Fisch 5" class="fish-image"><div class="fish-number">5</div></div>
+      <div class="fish right"><img src="Fisch2.png" alt="Fisch 6" class="fish-image"><div class="fish-number">6</div></div>
+    </div>
+    <div class="fish-row" id="row-4">
+      <div class="fish left"><img src="Fisch1.png" alt="Fisch 7" class="fish-image"><div class="fish-number">7</div></div>
+      <div class="fish right"><img src="Fisch2.png" alt="Fisch 8" class="fish-image"><div class="fish-number">8</div></div>
+    </div>
+    <div class="fish-row" id="row-5">
+      <div class="fish left"><img src="Fisch1.png" alt="Fisch 9" class="fish-image"><div class="fish-number">9</div></div>
+      <div class="fish right"><img src="Fisch2.png" alt="Fisch 10" class="fish-image"><div class="fish-number">10</div></div>
+    </div>
+    <div class="fish-row" id="row-6">
+      <div class="fish left"><img src="Fisch1.png" alt="Fisch 11" class="fish-image"><div class="fish-number">11</div></div>
+      <div class="fish right"><img src="Fisch2.png" alt="Fisch 12" class="fish-image"><div class="fish-number">12</div></div>
+    </div>
+    <div class="fish-row" id="row-7">
+      <div class="fish left"><img src="Fisch1.png" alt="Fisch 13" class="fish-image"><div class="fish-number">13</div></div>
+      <div class="fish right"><img src="Fisch2.png" alt="Fisch 14" class="fish-image"><div class="fish-number">14</div></div>
+    </div>
+
+    <!-- Bubble Container -->
+    <div id="bubble-container"></div>
+  </div>
+
+  <!-- 🎵 Sounds -->
+  <audio id="fail-sound" src="8-bit-video-game-lose-sound-version-1-145828.mp3"></audio>
+  <audio id="nomnom-sound" src="carrotnom-92106.mp3"></audio>
+  <audio id="win-sound" src="sweet-game-over-sound-effect-230470.mp3"></audio>
+  <audio id="bg-music" src="fairy-tale-loop-275534.mp3" loop autoplay></audio>
+</body>
+</html>
