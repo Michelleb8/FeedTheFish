@@ -170,6 +170,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const containerWidth = container.offsetWidth;
     targetPosition += direction * step;
     targetPosition = Math.max(0, Math.min(containerWidth - fishWidth, targetPosition));
+
+    // Bild je nach Richtung wechseln
+    if (direction > 0) {
+      fishImage.src = "Fisch1.png"; // nach rechts schwimmen
+    } else {
+      fishImage.src = "Fisch1_mirrored.png"; // nach links schwimmen
+    }
+
     if (!animationFrameId) smoothMove();
   }
 
@@ -191,11 +199,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
           fish1.style.left = "0px";
           targetPosition = 0;
+          fishImage.src = "Fisch1.png"; // Bild zurücksetzen
           animationFrameId = null;
           return;
         }
         smoothMove();
       } else {
+        // Wenn Fisch auf Startposition ist, Bild zurücksetzen
+        if (parseInt(fish1.style.left || 0, 10) === 0) {
+          fishImage.src = "Fisch1.png";
+        }
         animationFrameId = null;
       }
     });
